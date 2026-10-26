@@ -1,9 +1,13 @@
-
 campus = {
-    "Hostel": {"Cafeteria": 150, "Admin Block": 300},
+    "Hostel": {
+        "Cafeteria": 150,
+        "Admin Block": 300,
+        "Sports Complex": 180
+    },
     "Cafeteria": {"Academic Block": 200},
     "Admin Block": {"Academic Block": 120},
     "Academic Block": {"Library": 100},
+    "Sports Complex": {"Library": 250},
     "Library": {}
 }
 
@@ -12,6 +16,7 @@ heuristic = {
     "Cafeteria": 260,
     "Admin Block": 150,
     "Academic Block": 90,
+    "Sports Complex": 200,
     "Library": 0
 }
 
@@ -44,8 +49,7 @@ def gbfs(start, goal):
 
         visited.append(node)
 
-        print("Exploring", node, " path:", path,
-              " h =", get_h(path))
+        print("Exploring", node, " path:", path, " h =", get_h(path))
 
         if node == goal:
             return path
