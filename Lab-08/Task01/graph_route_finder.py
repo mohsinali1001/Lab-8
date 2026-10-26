@@ -75,3 +75,5 @@ print("Path found by A*:", answer)
 
 if answer is not None:
     print("Total cost of this path:", get_g(answer))
+    
+print("----------End---------")
