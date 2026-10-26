@@ -57,6 +57,7 @@ def a_star(start, goal):
             frontier.append(new_path)
 
     print("Goal not found")
+    print("Total nodes explored:", explored)
     return None
 
 
